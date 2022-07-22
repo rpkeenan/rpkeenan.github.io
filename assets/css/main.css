@@ -3321,13 +3321,23 @@ input, select, textarea {
 
 		@media screen and (max-width: 736px) {
 
+			#nav {
+				padding: 0.5em;
+				/* display: none; */
+			}
+
+			#nav.alt {
+				padding: 0em;
+				/* display: none; */
+			}
+
 			/* #nav {
 				display: none;
 			} */
 
-				#nav + #main {
-					padding-top: 0;
-				}
+			/* #nav + #main {
+				padding-top: 0;
+			} */
 
 		}
 
