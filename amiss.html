@@ -13,97 +13,137 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		<meta name="google-site-verification" content="WpQfsZ9dXx-WLNyu6NjZB9ToqTdFSYs5ls5n4QVkEaM" />
+
+		<!-- jquery - lets me have the same footers etc. on every page -->
+		<script 
+			src="https://code.jquery.com/jquery-3.7.1.js"
+			integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+			crossorigin="anonymous">
+		</script>
+		<script> 
+			$(function(){
+			$("#incnav").load("include_nav.html"); 
+			$("#incfoot").load("include_footer.html"); 
+			});
+		</script> 
+
 	</head>
 
 	<body class="is-preload">
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+	<!-- Wrapper -->
+	<div id="wrapper">
 
-				<!-- Header -->
-					<header id="header" class="alt">
-						<h1>AMISS</h1>
-						<p>The Arizona Molecular ISM Survey with the SMT<br />
+		<!-- Header -->
+		<header id="header" class="alt">
+			<h1>AMISS</h1>
+			<p>The Arizona Molecular ISM Survey with the SMT<br />
+		</header>
+
+		<!-- Nav -->
+		<div id="incnav"></div>
+
+		<!-- Main -->
+		<div id="main">
+
+			<!-- Introduction -->
+			<section id="amiss-overview" class="main">
+				<div class="content">
+					<header class="major">
+						<h2><b>About AMISS</b></h2>
 					</header>
+					<p>AMISS is the Arizona Molecular ISM Survey with the SMT.
+						We are undertaking a survey of millimeter wavelength 
+						emission lines that trace the mass and conditions of 
+						molecular gas in the interstellar medium (ISM) of around
+						177 galaxies in the local universe. AMISS will measure
+						the spectral line luminosities and ratios between the 
+						three lowest energy rotational transitions of the carbon 
+						monoxide molecule &mdash; CO(1-0), CO(2-1) and 
+						CO(3-2). This will allow us to precisely calibrate
+						CO(2-1) and CO(3-2) as molecular gas mass tracers
+						for a diverse set of galaxies. Our measurements of CO line
+						ratios can also constrain the temperature and density of
+						the bulk molecular gas in galaxies on the star forming main
+						sequence, providing insights into how the ISM regulates
+						star formation and gas consumption.</p>
 
-				<!-- Nav -->
-				<nav id="nav">
-					<ul>
-						<li><a href="index.html" >Home</a></li>
-						<li><a href="#" class="active">AMISS</a></li>
-					</ul>
-				</nav>
+					<p>AMISS has obtained CO(2-1) spectra of 176 galaxies 
+						and CO(3-2) spectra of a subset of 45 with the 
+						<a href="https://aro.as.arizona.edu">
+						Arizona Radio Observatory's</a> Submillimeter Telescope. 
+						CO(1-0) spectra from the IRAM 30M telescope are 
+						available for the entire sample from 
+						<a href="http://www.star.ucl.ac.uk/xCOLDGASS/">
+						xCOLDGASS</a> and we have obtained further CO(1-0) 
+						spectra of 55 galaxies with the Kitt Peak 12m Telescope.</p>
 
+					<p>Observations are now complete and the first papers based
+						on the survey have been submitted. All AMISS data will be
+						made publicly available upon the release of these papers (late 2023).
+						If you would like access to any of the data now, contact me.</p>
 
-				<!-- Main -->
-					<div id="main">
+				</div>
+			</section>
 
-					<!-- Introduction -->
-						<section id="amiss-overview" class="main">
-							<div class="content">
-								<header class="major">
-									<h2><b>About AMISS</b></h2>
-								</header>
-								<p>AMISS is the Arizona Molecular ISM Survey with the SMT.
-									We are undertaking a survey of millimeter wavelength 
-									emission lines that trace the mass and conditions of 
-									molecular gas in the interstellar medium (ISM) of around
-									160 galaxies in the local universe.</p>
+			<!-- Papers -->
+			<section id="amiss-pubs" class="main">
+				<div class="content">
+					<header class="major">
+						<h2><b>AMISS Publications</b></h2>
+					</header>
+					<p>Two papers based on the AMISS project are currently in preparation:
+						<ol>
+							<li>"The Arizona Molecular ISM Survey with the SMT: Survey
+								Overview and Public Data Release", <b>R. P. Keenan</b>,
+								D. P. Marrone, G. K. Keating, E. C. Mayer, K. Bays, 
+								J. Downey, L. C. Dunn, J. C. Flores, T. W. Folkers, 
+								D. C. Forbes, B. C. Guvenen, C. Holmstedt, R. M. Moulton, 
+								& P. Sullivan 2023, The Astrophysical Journal, submitted
+								</li>
+							<li>"AMISS II: Variations in the CO(2--1)/CO(1--0) Line Ratio 
+								Across the Galaxy Population", <b>R. P. Keenan</b>, 
+								D. P. Marrone, G. K. Keating, & E. C. Mayer 2023, 
+								in preparation</li>
+						</ol>
+					</p>
+				</div>
+			</section>
 
-								<p>AMISS has used the <a href="https://aro.as.arizona.edu">
-									Arizona Radio Observatory's</a> Submillimeter Telescope
-									to obtain CO(2-1) spectra of 160 galaxies and CO(3-2) 
-									spectra of a subset of 20 of these. In addition, CO(1-0)
-									spectra from the IRAM 30M telescope are available for the 
-									full sample from <a href="http://www.star.ucl.ac.uk/xCOLDGASS/">
-									xCOLDGASS</a>.</p>
-
-								<p>We are in the process of preparing the data for public 
-									release in Spring 2023. Watch this space for further updates 
-									on the status of the project.</p>
-
-							</div>
-							<span class="image"><img src="amiss_example_spectrum.jpg" alt="" /></span>
-						</section>
-
-					<!-- Papers -->
-						<section id="amiss-pubs" class="main">
-							<div class="content">
-								<header class="major">
-									<h2><b>AMISS Publications</b></h2>
-								</header>
-								<p>Two papers based on the AMISS project are currently in preparation:
-									<ol>
-										<li>"AMISS I: Survey Description and Public Data Release", 
-											<b>R. P. Keenan</b>, D. P. Marrone, & G. K. Keating 2022, 
-											in preparation</li>
-										<li>"AMISS II: Systematic Variations in the CO(2-1)/CO(1-0) Line Ratio with Star Formation", 
-											<b>R. P. Keenan</b>, G. K. Keating, & D. P. Marrone 2022, 
-											in preparation</li>
-									</ol>
-								</p>
-							</div>
-							<!-- <span class="image"><img src="amiss_example_spectrum.jpg" alt="" /></span> -->
-						</section>
-
+			<!-- Data -->
+			<section id="amiss-data" class="main">
+				<div class="content">
+					<header class="major">
+						<h2><b>AMISS Data</b></h2>
+					</header>
+					<div class="spotlight">
+						<img src="pictures/AMISS.1041.png" alt="Image and spectra of AMISS target 1049" style="display:block; margin-left:auto; margin-right:auto; max-width:100%;">
 					</div>
+					<p>The AMISS data products include spectra for 177 galaxies,
+						and a catalog of line fluxes and luminosities. Once 
+						published, we will make a copy of our data available here.
+						The image above shows the SDSS image, location in the star
+						forming main sequence, and CO(1-0) through CO(3-2) spectra
+						for an example AMISS target.
+					</p>
+				</div>
+			</section>
+			
+		</div>
 
+		<!-- Footer -->
+		<div id="incfoot"></div>
 
-				<!-- Footer -->
-					<footer id="footer">
-						<p class="copyright">Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
-					</footer>
-
-			</div>
+		</div>
 
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
 
 	</body>
 </html>
